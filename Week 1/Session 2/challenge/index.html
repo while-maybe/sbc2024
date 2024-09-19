@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Vitor's first retro webpage</h1>
+      <p>My (fake) mobile number: +1 232 567 7895</p>
+      <a href="mailto:178353419+while-maybe@users.noreply.github.com">You can click here to E-mail me!</a>
+    </header>
+  
+    <section>
+      <p>I have had an interest in coding since a young age. Following a long break from it, I started thinking of doing it for a living. I enjoy listening to music, lazy days by the beach and everything tech.</p>
+      <img src="./assets/img/fox1_no_bg.png" alt="A good looking fox staring right you">
+    </section>
+
+    <section>
+      <h2>Like the fox? Get in touch!</h2>
+      <form action="http://127.0.0.1:3000/form_intro/" method="post" name="contact_form">
+        <label for="name" >Name: </label>
+        <input type="text" id="name">
+        <br>
+        <label for="email">E-mail</label>
+        <input type="text" id="email">
+        <br>
+        <label for="number">Contact number:</label>
+        <input type="tel" id="number">
+
+        <br><br>
+        <label for="message">Leave a message:</label>
+        <br>
+        <textarea id="message" cols="50" rows="7"></textarea>
+
+        <h3>How about some more contact options?</h3>
+        <p>I'd like to speak to someone in
+          <!--Dropdown menus demo-->
+          <select name="lang_dropdown" id="lang_dropdown">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="french">French</option>
+          </select>
+          <small><br>(use the the radio buttons below if you don't like dropdown menus):</small>
+        </p>
+        
+        <!--Radio buttons demo-->
+        <input type="radio" id="english" name="English" value="English">
+        <label for="english">English</label>
+        <br>
+        <input type="radio" id="spanish" name="Spanish" value="Spanish">
+        <label for="spanish">Spanish</label>
+        <br>
+        <input type="radio" id="french" name="French" value="French">
+        <label for="french">French</label>
+
+        <p>I want to hire your services to create:</p>
+        <!--Checkboxes demo-->
+        <input type="checkbox" id="one_page" name="one_page" value="one_page">
+        <label for="one_page">One page static website</label><br>
+        <input type="checkbox" id="five_page" name="five_page" value="five_page">
+        <label for="five_page">Five page website with a blog</label><br>
+        <input type="checkbox" id="full_stack" name="full_stack" value="full_stack">
+        <label for="full_stack">Beautiful dynamic website with a database</label>
+
+        <p>
+          When should we get in touch with you?
+          <!--date/time input type demo-->
+          <input type="date" id="contact_day" name="contact_day">
+          <input type="time" id="contact_time" name="contact_time">
+        </p>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </section>
+  </body>
+</html>

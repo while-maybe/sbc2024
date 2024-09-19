@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form demo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Vitor's first retro webpage</h1>
+      <p>My (fake) mobile number: +1 232 567 7895</p>
+      <a href="mailto:178353419+while-maybe@users.noreply.github.com">You can click here to E-mail me!</a>
+    </header>
+  
+    <section>
+      <p>I have had an interest in coding since a young age. Following a long break from it, I started thinking of doing it for a living. I enjoy listening to music, lazy days by the beach and everything tech.</p>
+      <img src="./assets/img/fox1_no_bg.png" alt="A good looking fox staring right you">
+    </section>
+
+    <section>
+      <h2>Like the fox? Get in touch!</h2>
+      <form action="http://127.0.0.1:3000/form_intro/" method="post" name="contact_form">
+        <label for="name" >Name: </label>
+        <input type="text" id="name">
+        <br>
+        <label for="email">E-mail</label>
+        <input type="text" id="email">
+        <br>
+        <label for="number">Contact number:</label>
+        <input type="tel" id="number">
+        <br>
+
+        <button type="submit" name="submit_button" value="submit_button" onclick="alert('Thanks for the juicy data')">Submit</button>
+
+      </form>
+    </section>
+
+  </body>
+</html>
