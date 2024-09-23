@@ -1,0 +1,91 @@
+/* General Styles */
+/* Added background and text colors for body element*/ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #ADD8FF;
+    color: #004A8F;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Element tag - Applied web-safe font and changed default color */
+header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #004A8F;
+}
+
+/*  Element tag - Applied web-safe font and changed default color*/
+header p {
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #004A8F;
+}
+
+/* Exercise Box Styles */
+.exercise-box {
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px dashed #333;
+    text-align: center;
+    background-color: #ffffff;
+    /* Default background color */
+    font-family: Arial, sans-serif;
+    /* Default font */
+}
+
+/* class selector for the text boxes box*/
+.exercise-box p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* class selector for box 1 */
+/* Added web-safe font and changed background colour */
+.box-1 {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* class selector for box  2*/
+/* Added web-safe font and changed background colour */
+.box-2 {
+    background-color: lightgreen;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* class selector for box  3*/
+/* Added web-safe font and changed background colour */
+.box-3 {
+    background-color: lightcoral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* class selector for box  4*/
+/* Added web-safe font and changed background colour */
+.box-4 {
+    background-color: lightgoldenrodyellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* class selector for box  5*/
+/* Added web-safe font and changed background colour */
+.box-5 {
+    background-color: lightsalmon;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* class selector for box 6 */
+/* Added web-safe font and changed background colour */
+.box-6 {
+    background-color: lightpink;
+    /* I didn't have Comic Sans MS installed by default so on Windows PCs it will show up, otherwise falls back to Tahoma, sans-serif */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}

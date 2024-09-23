@@ -1,0 +1,49 @@
+/* Universal Selector  - targets all elements*/
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector - targets h1 elements - adds color */
+h1 {
+    color: blue;
+}
+
+/* Element Selector - targets p elements - adds top and bottom margin using shorthand margin property value */
+
+p {
+    margin: 10px 0;
+}
+
+/* Element Selector - targets unordered elements - adds top and bottom margin and padding to the left */
+ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+/* Element Selector - targets list items - adds top and bottom margin */
+li {
+    margin: 5px 0;
+}
+
+/* Element Selector - targets anchor elements - adds color */
+a {
+    color: green;
+}
+
+/* Class Selector - targets all elements that contain the .highlight class - adds background color and modifies text to bold */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+/* Class Selector - targets all elements that contain the .special class - changes text color*/
+.special {
+    color: purple;
+}
+
+/* ID Selector - targets the (one) element that contains the #uniqueDiv ID - changes text color and font size */
+#uniqueDiv {
+    color: red;
+    font-size: 20px;
+}
