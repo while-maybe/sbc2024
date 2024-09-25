@@ -1,0 +1,112 @@
+:root {
+    --body-bg: #ffffff;
+    --body-color: #000000;
+    --theme-bg: #d90000;
+    --text-color: #ffffff;
+    --box-background: #fff3f3;
+
+    /* my changes*/
+    --body-bg: rgba(129, 176, 233, 0.377);
+    --theme-bg: rgba(0, 115, 255, 0.379);
+    --text-color: orange;
+    --box-background: rgba(23, 58, 233, 0.092);
+}
+
+/* Basic Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-bg);
+    /* Hardcoded white */
+    color: var(--body-color);
+    /* Hardcoded black */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--theme-bg);
+    /* Hardcoded red */
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    /* Hardcoded white */
+    font-weight: bold;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    background-color: var(--theme-bg);
+    /* Hardcoded red */
+    color: var(--text-color);
+    /* Hardcoded white */
+    padding: 40px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.header-image {
+    width: 100%;
+    
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: var(--body-bg);
+    /* Hardcoded white */
+}
+
+img {
+    max-height:fit-content;
+    width: 100%;
+    
+}
+
+.box {
+    width: 40%;
+    padding: 20px;
+    background-color: var(--box-background);
+    /* Light red background */
+    border: 2px solid var(--theme-bg);
+    /* Hardcoded red border */
+    color: var(--theme-bg);
+    /* Hardcoded red text */
+    text-align: center;
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.box p {
+    color: var(--body-color);
+    /* Hardcoded black text */
+}
+
+a.option {
+    color: var(--theme-bg);
+    /* Hardcoded red */
+    text-decoration: none;
+    width: 50%;
+}

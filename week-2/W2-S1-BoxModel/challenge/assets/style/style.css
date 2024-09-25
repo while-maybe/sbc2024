@@ -1,0 +1,190 @@
+:root {
+  --text-color: #101a7e;
+  --bg-color:#c9cdf8;
+  --highlight-bg-color: #5d69ea5a;
+  --inputs-bg-color: #5d69ea0e;
+
+  --hover-text-color: #101a7e;
+  --hover-bg-color: #c1666a3f;
+
+  --def-font-weight: 400;
+  --def-shadow: 2px 2px 2px rgba(64, 64, 64, 0.15);
+
+  --form-border: 1px solid #10197e49;
+
+  --def-img-width: 40rem;
+
+  --vertical-margin: 10px;
+  --def-padding: 15px;
+
+  --radius: 4px;
+
+  --boxed-icon-bg-pos: 5px center;
+  --input-padding: 30px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: var(--def-font-weight);
+
+  /* palette generated with https://coolors.co/412234-48a9a6-082d0f-c1666b-c9cdf8 */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  
+  box-sizing: border-box;
+}
+
+/* selector targets the body element and justifies text to center */
+body {
+  text-align: center;
+}
+
+header,
+footer {
+  border-radius: var(--radius);
+}
+
+/* selector targets h1 element - modifies font, adds a vertical margin */
+h1 {
+  font-size: x-large;
+  font-weight: bold;
+
+  margin: var(--vertical-margin);
+  padding: var(--def-padding) 0;
+  background-color: var(--highlight-bg-color);
+}
+
+/* selector targets h2 element - modifies font size, weight and alignment */
+h2 {
+  font-size: large;
+  font-weight: bold;
+
+  margin: var(--vertical-margin);
+}
+
+/* Selector targets ordered list and removes bullets/numbering. Also removes margin and padding*/
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+}
+
+/* Selector targets list items and changes display type to inline-block. Also add a little padding all around */
+li {
+  display: inline-block;
+  padding: var(--def-padding);
+}
+
+/* Selector targets anchor elements and removes underlines*/
+a {
+  text-decoration: none;
+  font-size: large;
+}
+
+/* selector targets anchor element with pseudo class selector hover - changes link color on hover */
+a:hover,
+button:hover {
+  /* background-color: #5D68EA; */
+  background-color: var(--hover-bg-color);
+  color: var(--hover-text-color);
+}
+
+/* selector targets about-pic class - change the picture display type, vertical alignmentm & dimensions */
+.about-pic {
+  display: inline;
+  vertical-align:top;
+
+  height: 125px;
+  width: auto;
+
+  border-radius: var(--radius);
+}
+
+/* hides the fox on hover */
+/* .about-pic:hover {
+  display: none;
+} */
+
+/* selector targets about-text class - change display type and vertically aligns the text to the bottom, also specifies a width for the text, removes bottom margin so it aligns with the bottom edge of the img */
+.about-text {
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: left;
+
+  /* width is needed so text won't jump down */
+  width: 40%;
+  margin-bottom: 0;
+}
+
+/* targets figure elements and changes the display type, aligns figures (and their figcaption) to the top*/
+figure {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* targets the img elements which are children of figure - changes dimensions */
+figure img {
+  width: var(--def-img-width);
+  height: auto;
+  margin-bottom: var(--vertical-margin);
+
+  box-shadow: var(--def-shadow);
+  border-radius: var(--radius);
+}
+
+/* targets figcaption elements and changes the font size, style and max  width for the caption*/
+figcaption {
+  font-size: small;
+  font-style: italic;
+  
+  max-width: var(--def-img-width);
+}
+
+/* targets input elements - adds a small botton margin */
+input,
+textarea,
+button {
+  border-radius: var(--radius);
+  margin-bottom: var(--vertical-margin);
+  box-shadow: var(--def-shadow);
+  border: var(--form-border);
+  background-color: var(--inputs-bg-color);
+}
+
+/* selector targets footer ID - changes horizontal text alignment and changes to a smaller font size */
+/* Stretches the element to 100% wide */
+
+#name,
+#email,
+#message {
+  background-repeat: no-repeat;
+  /* 10px from the left and vertically center */
+  background-position: var(--boxed-icon-bg-pos);
+  padding-left: var(--input-padding);
+}
+
+#name {
+  background-image: url("../img/name-icon-blue.svg");
+}
+
+#email {
+  background-image: url("../img/email-icon-blue.svg");
+}
+
+#message {
+  background-image: url("../img/textarea-icon-blue.svg");
+  background-size: 17px;
+  background-position: 4px 3px;
+}
+
+#footer {
+  text-align: center;
+  font-size: small;
+  
+  margin: 0;
+  padding: var(--def-padding) 0 ;
+
+  background-color: var(--highlight-bg-color);
+}
