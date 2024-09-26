@@ -20,7 +20,21 @@
   --radius: 4px;
 
   --boxed-icon-bg-pos: 5px center;
-  --input-padding: 30px;
+  --input-padding: 37px;
+
+  --def-inputandbutton-height: 30px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark {
+    --text-color: #CDCDCD;
+    --bg-color:#1B1B1B;
+    --highlight-bg-color: #5d69ea5a;
+    --inputs-bg-color: #5d69ea0e;
+  
+    --hover-text-color: #101a7e;
+    --hover-bg-color: #c1666a3f;
+  }
 }
 
 * {
@@ -153,8 +167,12 @@ button {
   background-color: var(--inputs-bg-color);
 }
 
-/* selector targets footer ID - changes horizontal text alignment and changes to a smaller font size */
-/* Stretches the element to 100% wide */
+input,
+button 
+{
+  height: var(--def-inputandbutton-height);
+}
+
 
 #name,
 #email,
@@ -175,8 +193,9 @@ button {
 
 #message {
   background-image: url("../img/textarea-icon-blue.svg");
-  background-size: 17px;
+  background-size: 1.75em;
   background-position: 4px 3px;
+  padding-top: 5px;
 }
 
 #footer {
