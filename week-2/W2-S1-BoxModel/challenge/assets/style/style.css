@@ -1,6 +1,6 @@
 :root {
   --text-color: #101a7e;
-  --bg-color:#c9cdf8;
+  --bg-color: #c9cdf8;
   --highlight-bg-color: #5d69ea5a;
   --inputs-bg-color: #5d69ea0e;
 
@@ -12,9 +12,11 @@
 
   --form-border: 1px solid #10197e49;
 
-  --def-img-width: 40rem;
+  --max-img-width: 500px;
 
   --vertical-margin: 10px;
+  --horizontal-margin: 25px;
+
   --def-padding: 15px;
 
   --radius: 4px;
@@ -25,15 +27,19 @@
   --def-inputandbutton-height: 30px;
 }
 
+/* color theme changes for dark mode */
 @media (prefers-color-scheme: dark) {
-  .dark {
+  /* .dark-theme { */
+  :root {
     --text-color: #CDCDCD;
-    --bg-color:#1B1B1B;
+    --bg-color: #1B1B1B;
     --highlight-bg-color: #5d69ea5a;
     --inputs-bg-color: #5d69ea0e;
   
-    --hover-text-color: #101a7e;
+    --hover-text-color: #CDCDCD;
     --hover-bg-color: #c1666a3f;
+
+    --form-border: 1px solid #5d69ea5a;
   }
 }
 
@@ -46,12 +52,13 @@
   background-color: var(--bg-color);
   color: var(--text-color);
   
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 /* selector targets the body element and justifies text to center */
 body {
   text-align: center;
+  margin: 0;
 }
 
 header,
@@ -64,7 +71,7 @@ h1 {
   font-size: x-large;
   font-weight: bold;
 
-  margin: var(--vertical-margin);
+  margin: 0 0 var(--vertical-margin) 0;
   padding: var(--def-padding) 0;
   background-color: var(--highlight-bg-color);
 }
@@ -136,12 +143,13 @@ button:hover {
 figure {
   display: inline-block;
   vertical-align: top;
+  max-width: var(--def-img-width);
+  margin: var(--vertical-margin) var(--horizontal-margin);
 }
 
 /* targets the img elements which are children of figure - changes dimensions */
 figure img {
-  width: var(--def-img-width);
-  height: auto;
+  max-width: var(--max-img-width);
   margin-bottom: var(--vertical-margin);
 
   box-shadow: var(--def-shadow);
@@ -152,8 +160,7 @@ figure img {
 figcaption {
   font-size: small;
   font-style: italic;
-  
-  max-width: var(--def-img-width);
+  max-width: var(--max-img-width);
 }
 
 /* targets input elements - adds a small botton margin */
@@ -172,7 +179,6 @@ button
 {
   height: var(--def-inputandbutton-height);
 }
-
 
 #name,
 #email,
