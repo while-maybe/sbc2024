@@ -17,6 +17,7 @@ body {
     display: flex;
 
     /* TODO: what happens when we change this? */
+    /* the boxes stack vertically - we swap the main axis with the cross axis */
     flex-direction: row;
     width: 80%;
     height: 300px;

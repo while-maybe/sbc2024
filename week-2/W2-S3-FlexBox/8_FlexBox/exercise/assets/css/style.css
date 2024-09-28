@@ -16,8 +16,10 @@ header {
 /* Flexbox navigation */
 .navbar {
     /* TODO: explain the purpose of the following properties */
+    /* changes container display mode to flex (as opposed to inline, block or inline-block) */
     display: flex;
 
+    /* centers flex items (container children) across the main axis (horizontal in this case) */
     justify-content: center;
     background-color: #007BFF;
     padding: 10px;
@@ -39,10 +41,14 @@ header {
 .content {
     
     /* TODO: explain the purpose of the following properties */
+    /* allows overflow of items to go to next line */
     flex-wrap: wrap;
+    /* changes container display mode to flex (as opposed to inline, block or inline-block) */
     display: flex;
 
+    /* distributes flex items (container children) placing available free space around the items with even margins  across the main axis (horizontally in this case) */
     justify-content: space-around;
+    /* centers flex items (container children) across the cross axis (vertically in this case) */
     align-items: center;
     margin: 20px auto;
     padding: 20px;
@@ -60,6 +66,7 @@ header {
     border-radius: 5px;
 
     /* TODO: explain the purpose of the following properties */
+    /* shorthand command meaning flex-grow: 1 (growth ratio), flex-shrink: 1 (shrinkage ratio), flex-basis 200px (flex-basis is a best-effort target width)  - distributes empty horizontal space between elements making them grow proportionally to flex-grow */
     flex: 1 1 200px;
 }
 
