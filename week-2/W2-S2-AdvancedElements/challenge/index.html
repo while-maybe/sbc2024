@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitor's w2s2 challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Complete the form below</h1>
+    </header>
+    <section>
+      <form action="#">
+        <fieldset>
+          <legend>Enter details here</legend>
+          <div>
+            <label for="name">Name: </label><br />
+            <span class="required">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                size="27"
+                autofocus
+                required
+              />
+            </span>
+          </div>
+          <div>
+            <label for="password">Password: </label><br />
+            <span class="required">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                size="27"
+                required
+              />
+            </span>
+          </div>
+          <div>
+            <label for="email">E-mail: </label><br />
+            <span class="optional">
+              <input id="email" name="email" type="email" size="27" />
+            </span>
+          </div>
+          <div>
+            <label for="cars">I'm interested in a</label>
+            <select name="cars" id="cars">
+              <option value="">choose below</option>
+              <option value="optionsmall">Small car</option>
+              <option value="optionmedium">Medium car</option>
+              <option value="optionsuv">SUV</option>
+              <option value="optionvan">Van</option>
+            </select>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+            <!--Extra reset button, enjoy!-->
+            <button type="reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+:root {
+  --primary-color: #1b1b1b;
+  --box-bg: #bbbbbb;
+  --box-bg-invalid: #cc9999;
+  --box-bg-required: #aa7777;
+  --box-bg-valid: #99cc99;
+  --text-color: wheat;
+  --highlight-color: #893552;
+  --highlight-color-valid: #25aa25;
+
+  --def-radius: 4px;
+
+  --box-padding: 3px 0 3px 5px;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  font-size: large;
+}
+
+form {
+  width: 400px;
+}
+
+fieldset {
+  border-radius: var(--def-radius);
+}
+
+legend {
+  color: var(--primary-color);
+  background-color: var(--text-color);
+  border-radius: var(--def-radius);
+  padding: 5px 10px;
+}
+
+div {
+  padding: 5px 0;
+}
+
+input {
+  padding: var(--box-padding);
+}
+
+input,
+select,
+button {
+  background-color: var(--box-bg);
+  border-radius: var(--def-radius);
+}
+
+/* if input is required, displays input box with a red background */
+input:required {
+  background-color: var(--box-bg-required);
+}
+
+/* if input is not valid (empty for text, invalid email), background shows a red border around input box */
+input:invalid {
+  border: 3px solid var(--highlight-color);
+}
+
+/* if input is valid, show a greenish border and changes background to green as well */
+input:valid {
+  border: 2px solid var(--highlight-color-valid);
+  background-color: var(--box-bg-valid);
+  /* an empty email address input field is considered valid that's why the background shows green*/
+}
+
+select {
+  margin-left: 2px;
+  padding: var(--box-padding);
+}
+
+/* if input field or dropdown active, highlight the background to white*/
+input:focus,
+select:focus {
+  background-color: white;
+}
+
+/* set the style for a label after the input field - a span wrapping the input field in html - Input elements, including input, textarea, and select, are “replaced elements” that cannot contain other elements or content. This is why pseudo-elements do not work with input fields by default. */
+.required::after,
+.optional::after {
+  color: var(--primary-color);
+  background-color: var(--text-color);
+  border-radius: var(--def-radius);
+
+  padding: 2px 5px;
+  margin-left: 5px;
+  font-size: 0.5em;
+  font-weight: 600;
+}
+
+/* adds content - a small text box if the elements contains class required */
+.required::after {
+  content: "REQUIRED";
+}
+
+/* adds content - a small text box if the elements contains class optional */
+.optional::after {
+  content: "OPTIONAL";
+}
+
+button {
+  margin: 20px 10px 0 0;
+  padding: 3px 5px;
+}
+
+/* if mouse over button, change the button background color */
+button:hover {
+  background-color: var(--highlight-color);
+}
