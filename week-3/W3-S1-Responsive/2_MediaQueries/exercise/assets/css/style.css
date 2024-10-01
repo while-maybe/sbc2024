@@ -102,6 +102,10 @@ button {
     cursor: pointer;
 }
 
+.product-surprise {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     .products {
         padding: 40px;
@@ -115,6 +119,42 @@ button {
         display: block;
     }
 
+    #mobile-menu {
+        display: none;
+    }
+
+    #desktop-menu {
+        display: block;
+    }
+
+    .product-surprise {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .products {
+        padding: 40px;
+        background-image: none;
+        background-color: red;
+    }
+
+    .product-surprise {
+        display: flex;
+        align-items: center;
+        height: 300px;
+        background-color: red;
+        font-size: larger;
+    }
+
+    .product {
+        width: 300px;
+    }
+
+    .banner {
+        display: block;
+    }
+    
     #mobile-menu {
         display: none;
     }

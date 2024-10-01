@@ -18,7 +18,21 @@ body {
         "header header"
         "sidebar main";
     height: 100vh;
-    gap: 10px;
+    gap: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main";
+        height: 100vh;
+        gap: 10px;
+    }
 }
 
 /* Header */
