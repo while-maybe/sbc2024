@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery CSS Manipulation</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- TODO: Add in the jQuery script  -->>
+    <!-- TODO: Add in the jQuery script  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,14 +40,32 @@
             $('#box1').click(function () {
                 $('#box1').css('color', 'red');
             });
-
+            
             // TODO: Increase font size for the second box
+            $('#box2').click(function () {
+                $('#box2').css('font-size', 'larger');
+            });
 
             // TODO: Change background color for the third box
+            $('#box3').click(function () {
+                $('#box3').css('background-color', 'navy');
+                $('#box3').css('color', 'wheat');
+            });
 
             // TODO: Italicize text for all the text elements
-
+            $('#box4').click(function () {
+                $('p').css('font-style', 'italic');
+                $('h2').css('background-color', 'orange');
+                $('h2').css('font-weight', '900');
+                $('h2').css('height', '25vh');
+                $('h2').css('display', 'flex');
+                $('h2').css('justify-content', 'center');
+                $('h2').css('align-items', 'center');
+                $('body').css('background-color', 'wheat');
+                $('h2').html('BOOOM');
+            });
         });
+
     </script>
 
 </body>

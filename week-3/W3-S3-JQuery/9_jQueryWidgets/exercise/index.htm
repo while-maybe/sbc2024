@@ -54,6 +54,24 @@
     <!-- Autocomplete Input -->
     <p>Start typing a fruit: <input type="text" id="autocomplete" class="autocomplete"></p>
 
+    <!-- checkbox radio -->
+    <fieldset>
+        <legend>Select a Location: </legend>
+        <label for="radio-1">New York</label>
+        <input type="radio" name="radio-1" id="radio-1">
+        <label for="radio-2">Paris</label>
+        <input type="radio" name="radio-1" id="radio-2">
+        <label for="radio-3">London</label>
+        <input type="radio" name="radio-1" id="radio-3">
+        <label for="radio-4">Barcelona</label>
+        <input type="radio" name="radio-1" id="radio-4">
+        <label for="radio-5">Cairo</label>
+        <input type="radio" name="radio-1" id="radio-5">
+      </fieldset>
+      <br>
+      <div id="progressbar"></div>
+
+
     <script>
         $(document).ready(function () {
             // Draggable widget
@@ -71,7 +89,17 @@
                 source: availableFruits
             });
         });
+
+        $( "input[type='radio']" ).checkboxradio();
+
+        $( "#progressbar" ).progressbar({
+        value: false
+        });
+
+        
     </script>
+
+
 
 </body>
 

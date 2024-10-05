@@ -56,3 +56,34 @@ footer {
     text-align: center;
     font-family: Verdana, sans-serif;
 }
+
+@font-face {
+    font-family: Roboto;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    font-display: swap;
+  }
+
+  /* font-styles to be applied at the end so it overrides potential definitions above */
+  body, h1, h2, p {
+      font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 400;
+    }
+    
+/* 
+h1 {
+    font-family: bigred, Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+    
+
+@font-face sixtyfour-convergence-<bigred> {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0,
+        "XELA" 0,
+        "YELA" 0;
+    } */
