@@ -1,18 +1,44 @@
 /* Custom Styles for overriding Bootstrap colors */
 
+.my-header {
+    color: wheat;
+    font-size: larger;
+    background-color: #444444;
+}
+
+.my-btn-primary {
+    color: wheat;
+    background-color: #999999;
+    border: 2px solid navy;
+}
+
+.my-btn-secondary {
+    color: black;
+    background-color: red;
+    border: 2px solid navy;
+}
+
+.my-text-dark {
+    color: navy;
+}
+
+.my-bg-secondary {
+    color: green;
+}
+
 /* Header Custom Colors */
 header {
-    background-color: #4B0082 !important;
+    background-color: #4B0082;
     /* Indigo */
-    color: #FFD700 !important;
+    color: #FFD700;
     /* Gold */
 }
 
 /* Footer Custom Colors */
 footer {
-    background-color: #2E8B57 !important;
+    background-color: #2E8B57;
     /* SeaGreen */
-    color: #FFFFFF !important;
+    color: #FFFFFF;
     /* White */
 }
 
