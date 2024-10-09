@@ -24,6 +24,7 @@ function calculate(n1, n2, op) {
             break
         }
         case "divide": {
+            // if n2 is 0 (a falsy value) negate it and return the error
             if (!n2) {
                 // return Error if divide by zero
                 return "Divide by zero? :/";
