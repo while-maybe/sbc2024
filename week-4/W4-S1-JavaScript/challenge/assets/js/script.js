@@ -4,24 +4,16 @@ function calculate(n1, n2, op) {
         return "Invalid input: both arguments must be numbers.";
     }
 
-    valid_ops = ["add", "subtract", "multiply", "divide"];
-    // convert op variable to String in case user specifies a number for the operation and .toLowerCase() fails (as it cannot convert a number to lowercase...)
-    if (!valid_ops.includes(String(op).toLowerCase())) {
-        return "Unknown operation. Please use 'add', 'subtract', 'multiply', or 'divide'.";
-    };
-
-    switch(op) {
+    // convert op variable to String in case user specifies a number for the operation and .toLowerCase() fails (as it cannot convert a number to lowercase...) - break statement not needed in case blocks as return exits the function
+    switch(String(op).toLowerCase()) {
         case "add": {
             return n1 + n2;
-            break
         }
         case "subtract": {
             return n1 - n2;
-            break
         }
         case "multiply": {
             return n1 * n2;
-            break
         }
         case "divide": {
             // if n2 is 0 (a falsy value) negate it and return the error
@@ -30,6 +22,9 @@ function calculate(n1, n2, op) {
                 return "Divide by zero? :/";
             }
             return n1 / n2;
+        }
+        default: {
+            return "Unknown operation. Please use 'add', 'subtract', 'multiply', or 'divide'.";
         }
     }
 }
