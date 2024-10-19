@@ -4,11 +4,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-
 # Thumbnails
 ._*
 
@@ -49,3 +44,42 @@ coverage/
 # Powerpoint with instruction
 *.pptx
 *.ppt
+
+
+# Linux based
+# System-generated files
+*.swp
+*.swo
+*.cache
+*.tmp
+
+# Build artifacts
+*.o
+*.obj
+*.ilk
+*.pdb
+
+# Development tool files
+*.pyc
+*.class
+*.dll
+*.so
+
+# Operating system-specific files
+.DS_Store
+thumbs.db
+
+# IDE-specific files
+*.iml
+*.cproject
+*.project
+
+# Package manager files
+*.deb
+*.rpm
+*.tar.gz
+
+# Miscellaneous files
+*.log
+*.bak
+*.rej
