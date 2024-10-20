@@ -11,6 +11,7 @@ const calc = require('./operations.js');
 // import path from "path";
 // import * as calc from "./operations.js";
 
+// let message = ["0", "/", "0"];
 const message = process.argv.slice(2);
 
 // Check if a message was provided
@@ -19,7 +20,6 @@ if (!message) {
     process.exit(1); // Exit the process if no message is provided
 }
 
-// let message = ["5", "+", "10"];
 let [n1, op, n2] = message;
 n1 = Number(n1);
 n2 = Number(n2);
@@ -44,7 +44,7 @@ switch (op) {
     }
 }
 
-const output = `${n1} ${op} ${n2} = ${result}`;
+const output = `${n1} ${op} ${n2}`.concat(!isNaN(result) && Math.abs(result) !== Infinity ? ` = ${result}` : ` [ERROR -> Can't divide by zero]`);
 
 const filePath = path.join(__dirname, fileName);
 
