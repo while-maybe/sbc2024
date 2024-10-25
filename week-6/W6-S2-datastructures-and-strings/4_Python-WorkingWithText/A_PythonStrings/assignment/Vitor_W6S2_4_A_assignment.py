@@ -10,10 +10,11 @@ print(double)
 print(triple)
 
 # Concatenate strings
-greeting = "Welcome to the program"
 name = "John"
-# TODO Concatenate strings: Use the + operator to concatenate a greeting with a user's name and format it using f-strings.
-print(f"{greeting} {name}")
+# string concatenation using the + operator
+greeting = "Welcome to the program "+ name
+# format the string to have width of 40 chars and justify the string content in this space
+print(f"{greeting:^40}")
 
 # Slice strings
 first_word = greeting[:7] # slice first word
@@ -22,6 +23,10 @@ some = greeting[11:19] # slice some characters in a range
 print(first_word, last_char, name)
 
 # Use common string methods
+# remove the end of the string containing space + name from the greeting string
+greeting = greeting.removesuffix(f" {name}")
+print(f"removesuffix - \"{name}\" is no longer in \"{greeting}\"")
+
 split_sentence = f"{greeting} {name}".split(" ") # splits the string with given separator and returns an array of strings
 print(split_sentence)
 
@@ -36,9 +41,9 @@ print(greeting.find("the")) # returns the index of the found search term
 print(greeting.replace("the", "our amazing")) # replaces source substring with destination substring
 
 # Get user input and Manipulate dictionary values
-user_data = {"name": input("Enter your name: ").strip().capitalize(), # strips leading and trailing whitespaces from user input
+user_data = {"name": input("Enter your name: ").strip().capitalize(), # strips leading and trailing whitespaces from user input and capitalizes
              "age": int(input("Type your age: ")), # parses string with age value to an int
-             "color": input("Your favourite color: ").strip().capitalize()  # strips leading and trailing whitespaces from user input
+             "color": input("Your favourite color: ").strip().capitalize()  # strips leading and trailing whitespaces from user input and capitalizes
             }
 
 print(user_data)
