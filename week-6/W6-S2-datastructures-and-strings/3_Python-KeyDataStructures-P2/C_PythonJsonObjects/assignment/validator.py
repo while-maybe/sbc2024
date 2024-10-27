@@ -1,7 +1,7 @@
 import jsonschema
 
 # Define a schema with nested objects
-schema = {
+global_schema = {
     # we validate an object
     "type": "object",
     # these are our keys
@@ -89,11 +89,10 @@ schema = {
     "required": ["company"],
 }
 
-def valid_data(data):
+def valid_data(data, schema=global_schema):
     try:
         jsonschema.validate(data, schema=schema)
     except jsonschema.exceptions.ValidationError:
         raise Exception("[FATAL] Invalid JSON data")
     except jsonschema.exceptions.SchemaError:
         raise Exception("[FATAL] Invalid JSON Schema definition")
-    
