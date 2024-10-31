@@ -18,6 +18,90 @@ def get_data(input_file=INPUT_FILE):
         print(f"[FATAL], {e}")
     return None
     
+    
+def save_data(ouput_file=OUTPUT_FILE):
+    # JSON schema data validation happens in this try block
+    try:
+        valid_data(data, global_schema)
+        # if there are json validation problems, terminate the program
+    except Exception as e:
+        print(e)
+        exit(1)
+    # file saving happens here
+    try:
+        with open(ouput_file, "w") as file:
+            json.dump(data, file, indent=4)
+        print("\n[OK] data saved")
+    except PermissionError:
+        print(f"\n[ERROR] Can't write to file")
+
+
+def show_all_employees(data):
+    print(f"\n[Staff list]")
+    for d in data["company"]["departments"]:
+        print(f"{d["name"]:>15} -> {", ".join(get_employees(d["name"]))}")
+
+
+def get_employees(dept):
+    for d in data["company"]["departments"]:
+        if d["name"] == dept.title():
+            return [employee["name"] for employee in d["employees"]]
+    raise ValueError(f"[ERROR] \"{dept}\" not found")
+
+
+def add_employee(employee, dept):
+    dept = dept.title()
+    for idx, d in enumerate(data["company"]["departments"]):
+        if d["name"] == dept:
+            data["company"]["departments"][idx]["employees"].append(employee)
+            return
+    raise ValueError(f"[ERROR] \"{dept}\" not found")
+
+
+def remove_employee(employee, dept):
+    dept = dept.title()
+    for idx, d in enumerate(data["company"]["departments"]):
+        if d["name"] == dept:
+            for person in data["company"]["departments"][idx]["employees"]:
+                if person["name"] == employee.title():
+                    data["company"]["departments"][idx]["employees"].remove(person)
+                    print(f"[OK] {employee} has been removed from {dept}")
+                    return
+    raise ValueError(f"[ERROR] \"{employee}\" not found in \"{dept}\"")
+
+
+def update_employee_role(employee_name, new_role):
+    for dept in data["company"]["departments"]:
+        for employee in dept["employees"]:
+            if employee["name"] == employee_name:
+                print(f"[OK] {employee["name"]} was a \"{employee["role"]}\" but is now a \"{new_role}\"")
+                employee["role"] = new_role
+                return
+    raise ValueError(f"[ERROR] \"{employee_name}\" Not found")
+
+
+def dynamic_interaction(data):
+    print("[INFO] type a key path separated with '>' \ncompany > departments > Engineering > employees > Alice > skills")
+    path = ""
+    while not path:
+        path = input("Info path: ").split(">")
+    # creates an array with the user query removing "company", "departments", "employees", "skills" from it if these exist and cleans the data
+    query_data = [each.strip().title() for each in path if each.lower() not in ["company", "departments", "employees", "skills"]]
+    
+    # if len(query_data) is 1, user wants dept; if 2 user wants employee; if 3 or more user wants skills
+    
+    # "company > departments > Engineering > employees > Alice > skills"
+    # clean the data
+    try:
+        dept = path[2].strip().title() # dept name given by user
+        employee = path[4].strip().title() # employee name given by user
+        skills = path[5].strip() # # employee skills given by user
+    except IndexError:
+        
+
+    
+
+
 
 data = get_data()
 # if there is no data read from the file, exit the program
@@ -37,32 +121,54 @@ except Exception as e:
 else:
     print("JSON schema is valid. JSON data is valid. :)")
 
-
-def show_all_employees(data = data):
-    print("\n***Complete employee listing***")
-    for d in data["company"]["departments"]:
-        print(f"{d["name"]:>15} -> {", ".join(get_employees(d["name"]))}")
-
-
-def get_employees(dept):
-    for d in data["company"]["departments"]:
-        if d["name"] == dept.title():
-            return [employee["name"] for employee in d["employees"]]
-    return None
-
-def add_employee(employee, dept):
-    for d in data["company"]["departments"]:
-        if d["name"] == dept.title():
-
-    print(data["company"]["departments"].index(dept.title()))
-    try:
-        data["company"]["departments"].index(dept.title())["employees"].append(employee)
-    # data["company"]["departments"][dept.title()]
-    except ValueError:
-        print(f"\"{dept.title()}\" doesn't exist")
-
-
-show_all_employees()
+show_all_employees(data)
+# Add a new employee under the "Engineering" department
 new_emp = {"name": "Ron", "age": 10, "role": "Rocket Scientist"}
-add_employee(new_emp, "engineering")
+try:
+    add_employee(new_emp, "engineering")
+except ValueError as e:
+    print(str(e))
+
+
+# ask the user for an employee name and update their role
+print("\n[Modify Role]")
+employee_name, new_role = "", ""
+while not (employee_name and new_role):
+    employee_name = input("Please enter the employee name: ").title()
+    new_role = input(f"{employee_name}'s new role: ").title()
+try:
+    update_employee_role(employee_name, new_role)
+except ValueError as e:
+    print(str(e))
+
 show_all_employees()
+
+# Remove an employee from the "Sales" department
+print("\n[Remove Employee]")
+employee_name, dept = "", ""
+while not (employee_name and dept):
+    employee_name = input("Please enter the employee name: ").title()
+    dept = input(f"{employee_name}'s department: ").title()
+try:
+    remove_employee(employee_name, dept)
+except ValueError as e:
+    print(str(e))
+
+show_all_employees()
+
+print("\n[Employees in dept]")
+dept = ""
+while not dept:
+    dept = input(f"Enter a department: ").title()
+try:
+    print(f"[OK] {get_employees(dept)}")
+except ValueError as e:
+    print(str(e))
+
+
+
+
+
+
+
+save_data()
