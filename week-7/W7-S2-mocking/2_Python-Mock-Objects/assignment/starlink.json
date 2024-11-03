@@ -1,0 +1,407 @@
+{
+    "count": 84,
+    "next": "https://lldev.thespacedevs.com/2.3.0/launches/?format=json&limit=10&mode=list&offset=10&search=Starlink",
+    "previous": null,
+    "results": [
+        {
+            "id": "6159729f-70fd-4817-9223-b250dca18f5f",
+            "url": "https://lldev.thespacedevs.com/2.3.0/launches/6159729f-70fd-4817-9223-b250dca18f5f/?format=json",
+            "name": "Falcon 9 Block 5 | Starlink Group 6-27",
+            "response_mode": "list",
+            "slug": "falcon-9-block-5-starlink-group-6-27",
+            "launch_designator": "2023-171",
+            "status": {
+                "id": 3,
+                "name": "Launch Successful",
+                "abbrev": "Success",
+                "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+            },
+            "last_updated": "2024-03-05T17:36:44Z",
+            "net": "2023-11-08T05:05:30Z",
+            "net_precision": {
+                "id": 0,
+                "name": "Second",
+                "abbrev": "SEC",
+                "description": "The T-0 is accurate to the second."
+            },
+            "window_end": "2023-11-08T07:59:10Z",
+            "window_start": "2023-11-08T04:31:00Z",
+            "image": {
+                "id": 1296,
+                "name": "Starlink night fairing",
+                "image_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+                "thumbnail_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+                "credit": "SpaceX",
+                "license": {
+                    "id": 5,
+                    "name": "CC BY-NC 2.0",
+                    "priority": 1,
+                    "link": "https://creativecommons.org/licenses/by-nc/2.0/"
+                },
+                "single_use": false,
+                "variants": []
+            },
+            "infographic": null
+        },
+        {
+            "id": "dc5c0513-9c1e-416d-8675-6e83187a4c07",
+            "url": "https://lldev.thespacedevs.com/2.3.0/launches/dc5c0513-9c1e-416d-8675-6e83187a4c07/?format=json",
+            "name": "Falcon 9 Block 5 | Starlink Group 6-28",
+            "response_mode": "list",
+            "slug": "falcon-9-block-5-starlink-group-6-28",
+            "launch_designator": "2023-177",
+            "status": {
+                "id": 3,
+                "name": "Launch Successful",
+                "abbrev": "Success",
+                "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+            },
+            "last_updated": "2024-03-05T17:32:58Z",
+            "net": "2023-11-18T05:05:50Z",
+            "net_precision": {
+                "id": 0,
+                "name": "Second",
+                "abbrev": "SEC",
+                "description": "The T-0 is accurate to the second."
+            },
+            "window_end": "2023-11-18T07:59:30Z",
+            "window_start": "2023-11-18T04:00:50Z",
+            "image": {
+                "id": 1296,
+                "name": "Starlink night fairing",
+                "image_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+                "thumbnail_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+                "credit": "SpaceX",
+                "license": {
+                    "id": 5,
+                    "name": "CC BY-NC 2.0",
+                    "priority": 1,
+                    "link": "https://creativecommons.org/licenses/by-nc/2.0/"
+                },
+                "single_use": false,
+                "variants": []
+            },
+            "infographic": null
+        },
+        {
+            "id": "a6e6b618-51f7-41ba-a8d3-0d375ba4530a",
+            "url": "https://lldev.thespacedevs.com/2.3.0/launches/a6e6b618-51f7-41ba-a8d3-0d375ba4530a/?format=json",
+            "name": "Falcon 9 Block 5 | Starlink Group 7-7",
+            "response_mode": "list",
+            "slug": "falcon-9-block-5-starlink-group-7-7",
+            "launch_designator": "2023-178",
+            "status": {
+                "id": 3,
+                "name": "Launch Successful",
+                "abbrev": "Success",
+                "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+            },
+            "last_updated": "2024-03-05T17:56:50Z",
+            "net": "2023-11-20T10:30:40Z",
+            "net_precision": {
+                "id": 0,
+                "name": "Second",
+                "abbrev": "SEC",
+                "description": "The T-0 is accurate to the second."
+            },
+            "window_end": "2023-11-20T10:30:40Z",
+            "window_start": "2023-11-20T06:33:30Z",
+            "image": {
+                "id": 1296,
+                "name": "Starlink night fairing",
+                "image_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+                "thumbnail_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+                "credit": "SpaceX",
+                "license": {
+                    "id": 5,
+                    "name": "CC BY-NC 2.0",
+                    "priority": 1,
+                    "link": "https://creativecommons.org/licenses/by-nc/2.0/"
+                },
+                "single_use": false,
+                "variants": []
+            },
+            "infographic": null
+        },
+        {
+            "id": "fe91ad95-fd2a-4a13-a7d1-842624ec6be3",
+            "url": "https://lldev.thespacedevs.com/2.3.0/launches/fe91ad95-fd2a-4a13-a7d1-842624ec6be3/?format=json",
+            "name": "Falcon 9 Block 5 | Starlink Group 6-29",
+            "response_mode": "list",
+            "slug": "falcon-9-block-5-starlink-group-6-29",
+            "launch_designator": "2023-180",
+            "status": {
+                "id": 3,
+                "name": "Launch Successful",
+                "abbrev": "Success",
+                "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+            },
+            "last_updated": "2024-03-05T18:04:23Z",
+            "net": "2023-11-22T07:47:40Z",
+            "net_precision": {
+                "id": 0,
+                "name": "Second",
+                "abbrev": "SEC",
+                "description": "The T-0 is accurate to the second."
+            },
+            "window_end": "2023-11-22T07:59:40Z",
+            "window_start": "2023-11-22T04:15:30Z",
+            "image": {
+                "id": 1296,
+                "name": "Starlink night fairing",
+                "image_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+                "thumbnail_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+                "credit": "SpaceX",
+                "license": {
+                    "id": 5,
+                    "name": "CC BY-NC 2.0",
+                    "priority": 1,
+                    "link": "https://creativecommons.org/licenses/by-nc/2.0/"
+                },
+                "single_use": false,
+                "variants": []
+            },
+            "infographic": null
+        },
+        {
+            "id": "7bf22b01-938a-4b64-ad1e-d3f372f78a34",
+            "url": "https://lldev.thespacedevs.com/2.3.0/launches/7bf22b01-938a-4b64-ad1e-d3f372f78a34/?format=json",
+            "name": "Falcon 9 Block 5 | Starlink Group 6-30",
+            "response_mode": "list",
+            "slug": "falcon-9-block-5-starlink-group-6-30",
+            "launch_designator": "2023-183",
+            "status": {
+                "id": 3,
+                "name": "Launch Successful",
+                "abbrev": "Success",
+                "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+            },
+            "last_updated": "2024-03-05T17:48:37Z",
+            "net": "2023-11-28T04:20:00Z",
+            "net_precision": {
+                "id": 0,
+                "name": "Second",
+                "abbrev": "SEC",
+                "description": "The T-0 is accurate to the second."
+            },
+            "window_end": "2023-11-28T07:58:10Z",
+            "window_start": "2023-11-28T04:01:30Z",
+            "image": {
+                "id": 1296,
+                "name": "Starlink night fairing",
+                "image_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+                "thumbnail_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+                "credit": "SpaceX",
+                "license": {
+                    "id": 5,
+                    "name": "CC BY-NC 2.0",
+                    "priority": 1,
+                    "link": "https://creativecommons.org/licenses/by-nc/2.0/"
+                },
+                "single_use": false,
+                "variants": []
+            },
+            "infographic": null
+        },
+        {
+            "id": "8cf1015d-3fe5-40c4-8436-2f79c1f3ff2e",
+            "url": "https://lldev.thespacedevs.com/2.3.0/launches/8cf1015d-3fe5-40c4-8436-2f79c1f3ff2e/?format=json",
+            "name": "Falcon 9 Block 5 | Starlink Group 6-31",
+            "response_mode": "list",
+            "slug": "falcon-9-block-5-starlink-group-6-31",
+            "launch_designator": "2023-186",
+            "status": {
+                "id": 3,
+                "name": "Launch Successful",
+                "abbrev": "Success",
+                "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+            },
+            "last_updated": "2024-03-05T17:47:42Z",
+            "net": "2023-12-03T04:00:50Z",
+            "net_precision": {
+                "id": 0,
+                "name": "Second",
+                "abbrev": "SEC",
+                "description": "The T-0 is accurate to the second."
+            },
+            "window_end": "2023-12-03T04:51:20Z",
+            "window_start": "2023-12-03T04:00:50Z",
+            "image": {
+                "id": 1296,
+                "name": "Starlink night fairing",
+                "image_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+                "thumbnail_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+                "credit": "SpaceX",
+                "license": {
+                    "id": 5,
+                    "name": "CC BY-NC 2.0",
+                    "priority": 1,
+                    "link": "https://creativecommons.org/licenses/by-nc/2.0/"
+                },
+                "single_use": false,
+                "variants": []
+            },
+            "infographic": null
+        },
+        {
+            "id": "b666d809-7a76-4b4d-98bd-6c471cd7e4a8",
+            "url": "https://lldev.thespacedevs.com/2.3.0/launches/b666d809-7a76-4b4d-98bd-6c471cd7e4a8/?format=json",
+            "name": "Falcon 9 Block 5 | Starlink Group 6-33",
+            "response_mode": "list",
+            "slug": "falcon-9-block-5-starlink-group-6-33",
+            "launch_designator": "2023-191",
+            "status": {
+                "id": 3,
+                "name": "Launch Successful",
+                "abbrev": "Success",
+                "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+            },
+            "last_updated": "2024-03-05T17:40:23Z",
+            "net": "2023-12-07T05:07:30Z",
+            "net_precision": {
+                "id": 0,
+                "name": "Second",
+                "abbrev": "SEC",
+                "description": "The T-0 is accurate to the second."
+            },
+            "window_end": "2023-12-07T07:59:00Z",
+            "window_start": "2023-12-07T04:01:00Z",
+            "image": {
+                "id": 1296,
+                "name": "Starlink night fairing",
+                "image_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+                "thumbnail_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+                "credit": "SpaceX",
+                "license": {
+                    "id": 5,
+                    "name": "CC BY-NC 2.0",
+                    "priority": 1,
+                    "link": "https://creativecommons.org/licenses/by-nc/2.0/"
+                },
+                "single_use": false,
+                "variants": []
+            },
+            "infographic": null
+        },
+        {
+            "id": "2008dbb3-a1ce-4677-ad95-abaf9773a7cf",
+            "url": "https://lldev.thespacedevs.com/2.3.0/launches/2008dbb3-a1ce-4677-ad95-abaf9773a7cf/?format=json",
+            "name": "Falcon 9 Block 5 | Starlink Group 7-8",
+            "response_mode": "list",
+            "slug": "falcon-9-block-5-starlink-group-7-8",
+            "launch_designator": "2023-192",
+            "status": {
+                "id": 3,
+                "name": "Launch Successful",
+                "abbrev": "Success",
+                "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+            },
+            "last_updated": "2024-03-05T18:19:44Z",
+            "net": "2023-12-08T08:03:40Z",
+            "net_precision": {
+                "id": 0,
+                "name": "Second",
+                "abbrev": "SEC",
+                "description": "The T-0 is accurate to the second."
+            },
+            "window_end": "2023-12-08T10:14:40Z",
+            "window_start": "2023-12-08T08:00:50Z",
+            "image": {
+                "id": 1296,
+                "name": "Starlink night fairing",
+                "image_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+                "thumbnail_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+                "credit": "SpaceX",
+                "license": {
+                    "id": 5,
+                    "name": "CC BY-NC 2.0",
+                    "priority": 1,
+                    "link": "https://creativecommons.org/licenses/by-nc/2.0/"
+                },
+                "single_use": false,
+                "variants": []
+            },
+            "infographic": null
+        },
+        {
+            "id": "7e34bf07-7031-4dd7-844f-7067107489a3",
+            "url": "https://lldev.thespacedevs.com/2.3.0/launches/7e34bf07-7031-4dd7-844f-7067107489a3/?format=json",
+            "name": "Falcon 9 Block 5 | Starlink Group 6-34",
+            "response_mode": "list",
+            "slug": "falcon-9-block-5-starlink-group-6-34",
+            "launch_designator": "2023-200",
+            "status": {
+                "id": 3,
+                "name": "Launch Successful",
+                "abbrev": "Success",
+                "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+            },
+            "last_updated": "2024-03-05T17:46:57Z",
+            "net": "2023-12-19T04:01:00Z",
+            "net_precision": {
+                "id": 0,
+                "name": "Second",
+                "abbrev": "SEC",
+                "description": "The T-0 is accurate to the second."
+            },
+            "window_end": "2023-12-19T07:59:00Z",
+            "window_start": "2023-12-19T04:01:00Z",
+            "image": {
+                "id": 1296,
+                "name": "Starlink night fairing",
+                "image_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+                "thumbnail_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+                "credit": "SpaceX",
+                "license": {
+                    "id": 5,
+                    "name": "CC BY-NC 2.0",
+                    "priority": 1,
+                    "link": "https://creativecommons.org/licenses/by-nc/2.0/"
+                },
+                "single_use": false,
+                "variants": []
+            },
+            "infographic": null
+        },
+        {
+            "id": "3a88fa72-ad1d-4174-99c4-926596354b2a",
+            "url": "https://lldev.thespacedevs.com/2.3.0/launches/3a88fa72-ad1d-4174-99c4-926596354b2a/?format=json",
+            "name": "Falcon 9 Block 5 | Starlink Group 6-32",
+            "response_mode": "list",
+            "slug": "falcon-9-block-5-starlink-group-6-32",
+            "launch_designator": "2023-203",
+            "status": {
+                "id": 3,
+                "name": "Launch Successful",
+                "abbrev": "Success",
+                "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+            },
+            "last_updated": "2024-03-05T17:36:28Z",
+            "net": "2023-12-23T05:33:00Z",
+            "net_precision": {
+                "id": 0,
+                "name": "Second",
+                "abbrev": "SEC",
+                "description": "The T-0 is accurate to the second."
+            },
+            "window_end": "2023-12-23T08:00:00Z",
+            "window_start": "2023-12-23T04:00:00Z",
+            "image": {
+                "id": 1296,
+                "name": "Starlink night fairing",
+                "image_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+                "thumbnail_url": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+                "credit": "SpaceX",
+                "license": {
+                    "id": 5,
+                    "name": "CC BY-NC 2.0",
+                    "priority": 1,
+                    "link": "https://creativecommons.org/licenses/by-nc/2.0/"
+                },
+                "single_use": false,
+                "variants": []
+            },
+            "infographic": null
+        }
+    ]
+}
