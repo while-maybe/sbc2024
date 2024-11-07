@@ -12,11 +12,13 @@ def task_list(request):
 
 def task_detail(request, id):
     task = get_object_or_404(Task, pk=id)
-    return HttpResponse(f"Task detail: {task}")
+    # return HttpResponse(f"Task detail: {task}")
+    return render(request, 'todolist/task_detail.html', {'task': task})
 
 def task_delete(request, id):
     task = get_object_or_404(Task, pk=id)
     if request.method == "POST":
         task.delete()
-        return redirect("task_list")
-    return HttpResponse(f"Task Delete: {task}")
+        return redirect("todo_list/todo_list.html")
+    # return HttpResponse(f"Task Delete: {task}")
+    return render(request, 'todolist/task_detail.html', {'task': task})
