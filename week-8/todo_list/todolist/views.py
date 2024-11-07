@@ -8,7 +8,7 @@ def task_list(request):
     tasks = Task.objects.all()
     # return HttpResponse({tasks})
     # return HttpResponse(f"List of Tasks: {tasks}")
-    return render(request, 'todolist/task_list.html', {'tasks': tasks})
+    return render(request, 'todolist/todo_list.html', {'tasks': tasks})
 
 def task_detail(request, id):
     task = get_object_or_404(Task, pk=id)
