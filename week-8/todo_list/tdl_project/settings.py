@@ -33,6 +33,10 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # My apps
     'todolist',
+    
+    # Third party apps.
+    'django_bootstrap5',
+    
     # Default Django apps
     'django.contrib.admin',
     'django.contrib.auth',

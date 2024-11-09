@@ -1,0 +1,24 @@
+{% extends 'todolist/base.html' %}
+
+{% block content %}
+    <div class="task">
+        <h3>{{ task.title }}</h3>
+        <br>
+        <h4>{{ task.description }}</h4>
+        <br>
+        <p>{% if task.completed %} this task has been <strong>completed</strong>{% else %} Task incomplete {% endif %}</p>
+        <br>
+
+        <div class="container">
+            <form action="{% url 'todolist:task_edit' task_id=task.id %}" method="POST">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-warning">Edit</button>
+            </form>
+
+            <form action="{% url 'todolist:task_delete' task_id=task.id %}" method="POST">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+    </div>
+{% endblock content%}
