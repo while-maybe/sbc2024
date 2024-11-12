@@ -1,9 +1,12 @@
 {% extends 'todolist/base.html' %}
 
 {% block content %}
+
     <h1>Get it done: here's a todo list ;)</h1>
+    
     {% for task in tasks %}
         <article class="task">
             <h2><a href="{% url 'todolist:task_detail' task_id=task.id %}">{{ task.title }}</a></h2>
     {% endfor %}
+
 {% endblock content %}

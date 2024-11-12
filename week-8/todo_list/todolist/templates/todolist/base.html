@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/todolist.css' %}">
     </head>
-    <body class="d-flex flex-column align-items-center justify-content-between">
+    <body class="d-flex flex-column align-items-center justify-content-between vh-100">
         <header class="">
             <p>Website header</p>
             <ol>
@@ -26,8 +26,8 @@
             {% endblock content%}
         </main>
 
-        <footer>
-            <p><a href="{% url 'todolist:new_task' %}">Create a new task</a></p>
+        <footer class="">
+            <p><a href="{% url 'todolist:task_new' %}">Create a new task</a></p>
         </footer>
         
         {% bootstrap_javascript %}

@@ -24,40 +24,48 @@ def task_delete(request, task_id):
         task.delete()
         return redirect("todolist:task_list")
     # return HttpResponse(f"Task Delete: {task}")
-    context = {'task': task}
-    return render(request, 'todolist/task_detail.html', context)
+    # context = {'task': task}
+    return render(request, 'todolist/task_detail.html', task_id=task.id)
 
-def new_task(request):
+
+def task_new(request):
     if request.method == 'POST':
         form = TaskForm(request.POST)
         if form.is_valid():
             task = form.save(commit=False)
             # 'converts' to True is checkbox has been clicked in form (value is 'on' for checked or 'None' for unchecked)
-            task.completed = request.POST.get("completed") == 'on'
+            # task.completed = request.POST.get("completed") == 'on'
             task.save()
-            return redirect('todolist:task_detail', task_id=task.id)
+            return redirect('todolist:task_list')
     else:
         form = TaskForm()
-        context = {'form': form}
-        return render(request, 'todolist/new_task.html', context)
+    context = {'form': form}
+    return render(request, 'todolist/task_edit.html', context)
+
 
 def task_edit(request, task_id):
+    task = get_object_or_404(Task, id=task_id)
+    
     if request.method == 'POST':
-        form = TaskForm(request.POST)
+        form = TaskForm(data=request.POST, instance=task)
         if form.is_valid():
             task = form.save(commit=False)
             # 'converts' to True is checkbox has been clicked in form (value is 'on' for checked or 'None' for unchecked)
-            task.completed = request.POST.get("completed") == 'on'
+            
+            # do I need to convert a True to a checkbox?
+            # task.completed = request.POST.get("completed") == 'on'
             task.save()
             return redirect('todolist:task_detail', task_id=task.id)
     else:
-        form = TaskForm()
-        context = {'form': form}
-        return render(request, 'todolist/new_task.html', context)
+        form = TaskForm(instance=task)
+        
+
+    context = {'form': form, 'task': task}
+    return render(request, 'todolist/task_edit.html', context)
+
 
 class TaskForm(forms.ModelForm):
     class Meta:
         model = Task
         fields = ('title', 'description', 'completed')
         
-
