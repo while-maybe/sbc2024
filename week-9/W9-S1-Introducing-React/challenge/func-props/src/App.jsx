@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Student from './components/Student'
 
@@ -22,7 +22,7 @@ function App() {
     <>
       <div>
         <h1>Student list</h1>
-        {selectedStudent && <h2>Hi {selectedStudent}</h2>}
+        {selectedStudent && <h2>✋ {selectedStudent}</h2>}
         <ul>
           {students
             .slice(0, count + 1)
