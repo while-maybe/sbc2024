@@ -41,14 +41,17 @@ coverage/
 .DS_Store
 *.pem
 ._*
+
 ## Windows
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
 ## Linux
 *.swp
 *.swo
+
 # Icon must end with two \r
 Icon\r\r
 
@@ -93,12 +96,15 @@ Icon\r\r
 ## TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
 ## Python
 *.pyc
 **/__pycache__/**
 **/.venv/**
+
 ## Java
 *.class
+
 ## Compiled Libraries
 *.dll
 *.so
@@ -130,3 +136,32 @@ storybook-static/
 
 # Build Documentation
 .docusaurus
+
+# General temporary files
+*.tmp
+*.temp
+*~
+
+# Vim swap and backup files
+*.swp
+*.swo
+*.swn
+*.bak
+*.orig
+
+# Emacs backup files
+*~
+.\#*
+
+# Temporary files created by OpenOffice/LibreOffice
+# These are often prefixed with a dot and "lock" or "~$" for temporary lock files
+.~lock.*
+.~*#
+
+# macOS temporary files
+.DS_Store
+._*
+
+# Temporary files created by text editors or while editing
+Thumbs.db
+
