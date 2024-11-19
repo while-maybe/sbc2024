@@ -1,0 +1,15 @@
+/* src/App.css */
+.stylesheet {
+  background-color: lavender;
+  padding: 10px;
+  border-radius: 5px;
+  color: darkpurple;
+
+  /* my edits */
+  color: black;
+  font-size: x-large;
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  background-color: darkorange;
+}

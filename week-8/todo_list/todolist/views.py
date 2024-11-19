@@ -50,15 +50,10 @@ def task_edit(request, task_id):
         form = TaskForm(data=request.POST, instance=task)
         if form.is_valid():
             task = form.save(commit=False)
-            # 'converts' to True is checkbox has been clicked in form (value is 'on' for checked or 'None' for unchecked)
-            
-            # do I need to convert a True to a checkbox?
-            # task.completed = request.POST.get("completed") == 'on'
             task.save()
             return redirect('todolist:task_detail', task_id=task.id)
     else:
         form = TaskForm(instance=task)
-        
 
     context = {'form': form, 'task': task}
     return render(request, 'todolist/task_edit.html', context)

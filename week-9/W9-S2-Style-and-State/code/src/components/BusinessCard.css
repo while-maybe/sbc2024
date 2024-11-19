@@ -1,0 +1,21 @@
+.business-card {
+    background-color: #888888;
+    border: 1px solid firebrick;
+    text-align: center;
+    min-width: 400px;
+    border-radius: 5px;
+    padding: 1rem 0;
+}
+
+.photo-placeholder img {
+    border-radius: 50%;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+
+}
+
+.contact-info p {
+    
+}

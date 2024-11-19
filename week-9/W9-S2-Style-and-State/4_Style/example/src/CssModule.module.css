@@ -1,0 +1,15 @@
+/* src/CssModule.module.css */
+.moduleStyle {
+    background-color: peachpuff;
+    padding: 10px;
+    border-radius: 5px;
+    color: darkred;
+
+    /* my stuff */
+    font-size: 2rem;
+    /* margin: 0 auto; */
+    min-height: 5rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}

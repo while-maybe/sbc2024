@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #f0f0f0; */
+  margin: 0;
+
+  /* my stuff */
+  background-color: #444444;
+  gap: 1.5rem;
+}
