@@ -1,7 +1,7 @@
 // HomePage.js
 import React from 'react';
 
-const HomePage = () => {
+const AboutPage = () => {
   return (
     <div>
       <h2>Welcome to the About Page</h2>
@@ -10,4 +10,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default AboutPage;
